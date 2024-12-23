@@ -21,7 +21,7 @@ function Todo(props) {
           Delete
         </button>
       </div>
-      {showModal && <Modal />}
+      {showModal && <Modal onClick={closeModalHandler} onConfirm={closeModalHandler}/>}
       {showModal && <Backdrop onClick={closeModalHandler}/>}
     </div>
   );
